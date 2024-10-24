@@ -11,28 +11,24 @@
     <script src="date.js" defer></script>
 
 </head>
-<body>
-
+<body class="h-screen flex items-center justify-center">
     <main>
-  
         <!-- Time -->
-        <time class="time">
-                <data class="hours">HH</data> :
-                <data class="minutes">MM</data> :
-                <data class="seconds">SS</data>
-                <data class="amOrPM">AM/PM</data>
-            </time>
+        <time class="time container grid block mx-auto lg:grid-cols-6 md:grid-cols-2 font-mono text-4xl shadow-2xl bg-gray-700 text-white">
+          <data class="hours text-center">HH</data> :
+          <data class="minutes text-center">MM</data> :
+          <data class="seconds text-center">SS</data>
+          <data class="amOrPM text-center">AM/PM</data>
+        </time>
       
           
         <!-- Date -->
-        <time class="date">
-          <data class="month">Month</data>
-          <data class="dayOfMonth">00</data>,
-          <data class="year">0000</data> -
-          <data class="dayOfWeek">SMTWTFS</data>
+        <time class="date container grid block mx-auto lg:grid-cols-6 md:grid-cols-2 font-mono text-4xl shadow-2xl bg-gray-700 text-white">
+          <data class="month text-center">Month</data>
+          <data class="dayOfMonth text-center">00</data>,
+          <data class="year text-center">0000</data> -
+          <data class="dayOfWeek text-center">SMTWTFS</data>
         </time>
-      
       </main>
-    
 </body>
 </html>
